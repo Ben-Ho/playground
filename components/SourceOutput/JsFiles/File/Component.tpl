@@ -1,0 +1,3 @@
+<script>
+    <?=$this->text;?>
+</script>
