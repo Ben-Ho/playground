@@ -13,6 +13,14 @@ class Acl extends Kwf_Acl_Component
                 '/kwf/trl/kwf'), 'settings');
         $this->add(new Zend_Acl_Resource('kwf_trl_kwf-edit'), 'kwf_trl_kwf');
 
+        // To save data
+        $this->add(new Zend_Acl_Resource('data_save'));
+        $this->add(new Zend_Acl_Resource('data_load'));
+        $this->add(new Zend_Acl_Resource('data_delete'));
+        $this->allow(null, 'data_save');
+        $this->allow(null, 'data_load');
+        $this->allow(null, 'data_delete');
+
         // Admin
         $this->allow('admin', 'kwf_user_changeuser');
         $this->allow('admin', 'kwf_user_users');
