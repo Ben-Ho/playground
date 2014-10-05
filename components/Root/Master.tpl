@@ -11,19 +11,11 @@
             <div id="page">
                 <div id="outerHeader">
                     <div id="header">
-                        <div class="leftRegion">
-                            <div id="logo" class="logo"><div class="domain">vtinfos</div><div class="tld">.com</div></div>
-                            <a class="logout webStandard" href="/kwf/user/logout"><?=$this->data->trl('Abmelden');?></a>
+                        <div id="mainMenu">
+                            <?=$this->component($this->boxes['mainMenu']);?>
                         </div>
-                        <div class="menues">
-                            <div id="mainMenu">
-                                <?=$this->component($this->boxes['mainMenu']);?>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
-                <div class="clear"></div>
                 <div id="outerContent">
                     <div id="content">
                         <div id="innerContent">

@@ -6,7 +6,6 @@ class Menu_Main_Component extends Kwc_Menu_Component
         $ret = parent::getSettings();
         $ret['level'] = 'main';
         $ret['cssClass'] .= ' webListNone';
-        $ret['assets']['dep'][] = 'KwfResponsiveEl';
         return $ret;
     }
 }
